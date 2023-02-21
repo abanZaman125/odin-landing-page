@@ -66,3 +66,16 @@ section.random-info-section .random-info-card .blue-square {
     width: 100px;
     height: 100px;
 }
+
+figure {
+    padding: 5rem var(--alignment-padding);
+}
+
+figure, figure > blockquote {
+    margin: 0;
+}
+
+figure > figcaption {
+    text-align: end;
+}
+
