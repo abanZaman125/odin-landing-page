@@ -1,3 +1,7 @@
+:root {
+    --alignment-padding: 10%;
+}
+
 body {
     margin: 0;
 }
@@ -13,10 +17,26 @@ header ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em var(--alignment-padding);
 }
 
 header ul .header-items-container {
     display: flex;
     gap: 1em;
+}
+
+section.hero-section {
+    display: flex;
+    padding: 0 var(--alignment-padding);
+}
+
+section.hero-section div {
+    flex: 1;
+}
+
+section.hero-section .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
 }
