@@ -69,6 +69,8 @@ section.random-info-section .random-info-card .blue-square {
 
 figure {
     padding: 5rem var(--alignment-padding);
+    border-top: solid 1px;
+    border-bottom: solid 1px;
 }
 
 figure, figure > blockquote {
@@ -77,5 +79,22 @@ figure, figure > blockquote {
 
 figure > figcaption {
     text-align: end;
+}
+
+section.cta-section {
+    padding: 3% var(--alignment-padding);
+    border-bottom: solid 1px;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10%;
+    background-color: deepskyblue;
+}
+
+.cta-container > h2 {
+    margin-top: 0;
 }
 
