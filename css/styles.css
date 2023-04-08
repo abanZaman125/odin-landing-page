@@ -11,6 +11,7 @@ body {
 
 header {
     display: flex;
+    background-color: var(--primary-color);
 }
 
 /*Both outer and inner ul have no list-style-type.
@@ -20,23 +21,34 @@ header {
       -> li (header logo)
       -> ul
           -> li, li, li (three links)*/
-header ul {
-    list-style-type: none;
-}
-
 header > ul {
     margin: 0;
+    padding: 1em var(--alignment-padding);
+    list-style-type: none;
 
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1em var(--alignment-padding);
+    align-items: center;
 }
 
-header ul .header-items-container {
+header > ul > li {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-items-container {
     display: flex;
     gap: 1em;
     padding: 0;
+    list-style-type: none;
+}
+
+/*three header links*/
+ul.header-items-container > li {
+    font-weight: 200;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 section.hero-section {
