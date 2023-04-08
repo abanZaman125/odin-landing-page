@@ -1,17 +1,30 @@
 :root {
     --alignment-padding: 10%;
+    --primary-color: #1f2937;
+    --secondary-blue-color: #3882f6; 
 }
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     display: flex;
 }
 
+/*Both outer and inner ul have no list-style-type.
+  In the header there are no divs.
+  header
+  -> ul
+      -> li (header logo)
+      -> ul
+          -> li, li, li (three links)*/
 header ul {
     list-style-type: none;
+}
+
+header > ul {
     margin: 0;
 
     display: flex;
@@ -23,6 +36,7 @@ header ul {
 header ul .header-items-container {
     display: flex;
     gap: 1em;
+    padding: 0;
 }
 
 section.hero-section {
