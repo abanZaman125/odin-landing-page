@@ -34,12 +34,14 @@ header > ul {
     align-items: center;
 }
 
+/*Header Logo*/
 header > ul > li {
     font-size: 24px;
     color: #f9faf8;
 }
 
-.header-items-container {
+/*Three Header Links CONTAINER*/
+ul.header-items-container {
     display: flex;
     gap: 1em;
     padding: 0;
@@ -62,17 +64,25 @@ section.hero-section {
     background-color: var(--primary-color);
 }
 
+/*Container with Title, Subtitle, & Sign Up Button*/
+section.hero-section > div {
+    flex: 1;
+}
+
+/*"This website is awesome" Title*/
 .hero-text-container h1 {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
 }
 
+/*Subtitle Text*/
 .hero-text-container p {
     font-size: 18px;
     color: #e5e7eb;
 }
 
+/*Sign Up Button*/
 .hero-text-container button {
     background-color: var(--secondary-blue-color);
     border-radius: 5px;
@@ -85,18 +95,15 @@ section.hero-section {
     font-size: 15px;
 }
 
-section.hero-section div {
-    flex: 1;
-}
-
-/*-----------Random information/4-section section-----------*/
-
+/*Quote on Quote, Image*/
 section.hero-section .hero-image {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: lightgray;
 }
+
+/*-----------Random information/4-section section-----------*/
 
 section.random-info-section {
     display: flex;
@@ -124,6 +131,7 @@ section.random-info-section .random-info-card .blue-square {
     height: 100px;
 }
 
+/*----------- Quote Section ---------------*/
 figure {
     padding: 5rem var(--alignment-padding);
     border-top: solid 1px;
@@ -137,6 +145,8 @@ figure, figure > blockquote {
 figure > figcaption {
     text-align: end;
 }
+
+/*------------------ Call to Action Section ------------------*/
 
 section.cta-section {
     padding: 3% var(--alignment-padding);
@@ -154,6 +164,8 @@ section.cta-section {
 .cta-container > h2 {
     margin-top: 0;
 }
+
+/*Footer (Copyright Oden Project)*/
 
 footer {
     display: flex;
