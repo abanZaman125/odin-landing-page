@@ -145,16 +145,21 @@ section.random-info-section .random-info-card p{
 
 /*----------- Quote Section ---------------*/
 figure {
-    padding: 5rem var(--alignment-padding);
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    padding: 7.5rem 25%;
+    background-color: #dadbdc;
 }
 
 figure, figure > blockquote {
     margin: 0;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 figure > figcaption {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1rem;
     text-align: end;
 }
 
