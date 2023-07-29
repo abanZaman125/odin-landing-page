@@ -108,16 +108,16 @@ section.hero-section .hero-image {
 section.random-info-section {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 var(--alignment-padding);
+    padding: 7rem var(--alignment-padding);
     column-gap: 1.5rem;
     justify-content: center;
-    margin-bottom: 5rem;
 }
 
 section.random-info-section h2 {
     width: 100%;
     text-align: center;
     margin: 2em 0;
+    margin-top: 0;
     font-size: 2rem;
 }
 
@@ -167,7 +167,6 @@ figure > figcaption {
 
 section.cta-section {
     padding: 6.5rem 13%;
-    border-bottom: solid 1px;
     align-items: center;
 }
 
@@ -206,9 +205,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
+    background-color: var(--primary-color);
 }
 
 footer > p{
+    color: white;
     width: fit-content;
     margin: 0 auto;
 }
