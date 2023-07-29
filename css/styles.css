@@ -83,7 +83,7 @@ section.hero-section > div {
 }
 
 /*Sign Up Button*/
-.hero-text-container button {
+.hero-text-container button, .cta-container button {
     background-color: var(--secondary-blue-color);
     border-radius: 5px;
     padding: 1em 2em;
@@ -166,8 +166,15 @@ figure > figcaption {
 /*------------------ Call to Action Section ------------------*/
 
 section.cta-section {
-    padding: 3% var(--alignment-padding);
+    padding: 6.5rem 13%;
     border-bottom: solid 1px;
+    align-items: center;
+}
+
+section.cta-section .cta-container button {
+    border: 1px white solid;
+    margin-top: 0;
+    padding: 0.5em 2em;
 }
 
 .cta-container {
@@ -175,14 +182,24 @@ section.cta-section {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 10%;
-    background-color: deepskyblue;
+    background-color: var(--secondary-blue-color);
+    border-radius: 10px;
 }
 
-.cta-container > h2 {
-    margin-top: 0;
+.cta-container-text {
+    color: white;
 }
 
-/*Footer (Copyright Oden Project)*/
+.cta-container-text > h2 {
+   margin-bottom: 0;
+}
+
+.cta-container-text > p {
+    margin-top: 0.3rem;
+    font-weight: lighter;
+}
+
+/*---------- Footer (Copyright Oden Project) -----------*/
 
 footer {
     display: flex;
